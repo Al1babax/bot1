@@ -1,3 +1,4 @@
+[![GitHub Super-Linter](https://github.com/Al1babax/bot1/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 # bot1
 
 # Table of Contents
@@ -24,7 +25,9 @@ This is a Discord bot for and by The Byte Bunch. It will be deployed in that Dis
   - Edit `config.ini` to set feature flags to `1` for the features you would like to use
 - Run the bot
   - `python src/main.py`
-
+- Running the tests:
+  - `python -m pytest tests/`
+  - Note: this must be run from the root directory of the repository.
 ## Discord bot functions
 
 
