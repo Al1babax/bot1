@@ -1,5 +1,5 @@
 import logging
-from typing import Dict, Any
+from typing import Dict
 
 import discord
 from discord import app_commands
