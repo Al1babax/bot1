@@ -3,9 +3,9 @@ name: Pytest Code Base
 
 on:
   push:
-    branches: [ main, dev, linter-fixing ]
+    branches: [ main, dev ]
   pull_request:
-    branches: [ main, dev, linter-fixing ]
+    branches: [ main, dev ]
 
 jobs:
   test:
