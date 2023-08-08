@@ -1,10 +1,15 @@
 name: Deploy to GCP
 
 on:
+  workflow_run:
+    workflows: ["Lint Code Base", "Pytest Code Base"]
+    branches: [ dev, main ]
+    types:
+      - completed
   push:
-    branches: [ linter-fixing ]
+    branches: [ dev, main ]
   pull_request:
-    branches: [ linter-fixing ]
+    branches: [ dev, main ]
 
 jobs:
   deploy:

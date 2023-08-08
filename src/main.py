@@ -24,6 +24,7 @@ intents.reactions = True
 # Define client
 client = commands.Bot(command_prefix="/", intents=intents)
 
+
 @client.event
 async def on_ready():
     print("Bot is ready")
@@ -51,8 +52,8 @@ async def load_cogs() -> None:
             feature_file_name = filename[:-3]
             # Check if the feature flag is set to 0 if so skip the file
             if (
-                feature_file_name in feature_flags
-                and feature_flags[feature_file_name] == "0"
+                    feature_file_name in feature_flags
+                    and feature_flags[feature_file_name] == "0"
             ):
                 print(f"Skipping {filename}")
                 continue
