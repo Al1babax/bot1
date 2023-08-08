@@ -1,6 +1,7 @@
 import os
 from configparser import ConfigParser
 from pathlib import Path
+
 from dotenv import load_dotenv
 
 this_file_path = os.path.dirname(__file__)

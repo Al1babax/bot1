@@ -1,7 +1,7 @@
 # bot1
 [![GitHub Super-Linter](https://github.com/Al1babax/bot1/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
-# Table of Contents
+## Table of Contents
 
 - Overview
 - Setup instructions
@@ -14,22 +14,22 @@ This is a Discord bot for and by The Byte Bunch. It will be deployed in that Dis
 ## Setup Instructions
 
 - Prerequisites
-    - A Discord Bot, and a token for this bot
-    - A server to which you can invite this bot
-    - Your bot should be in that server, and should have the following positions: read and write messages, manage roles.
-- clone this repo
+  - A Discord Bot, and a token for this bot
+  - A server to which you can invite this bot
+  - Your bot should be in that server, and should have the following positions: read and write messages, manage roles.
+- clone this repository
 - create and activate virtual environment and install pip dependencies
 - Setup up credentials and configuration
-    - Copy `.env.example` to `.env`
-    - Edit `.env` to include your real Discord bot token
-    - Copy `config.ini.example` to `config.ini`
-    - Edit `config.ini` to contain your Guild_id, Channel_id, and User_id
-    - Edit `config.ini` to set feature flags to `1` for the features you would like to use
+  - Copy `.env.example` to `.env`
+  - Edit `.env` to include your real Discord bot token
+  - Copy `config.ini.example` to `config.ini`
+  - Edit `config.ini` to contain your Guild_id, Channel_id, and User_id
+  - Edit `config.ini` to set feature flags to `1` for the features you would like to use
 - Run the bot
-    - `python src/main.py`
+  - `python src/main.py`
 - Running the tests:
-    - `python -m pytest tests/`
-    - Note: this must be run from the root directory of the repository.
+  - `python -m pytest tests/`
+  - Note: this must be run from the root directory of the repository.
 
 ## Discord bot functions
 
@@ -67,13 +67,13 @@ This bot is used to manage roles on the server. It can add and remove roles from
 
 This bot is used to manage tables on the server. It can create new tables and add users to them with information.
 
-### Features
+#### Features
 
 - Admin can call the bot to create new table (with `/create_member_table`)
 - Admin can add users info to the table (with `/add_body`)
 - Admin can add headers to the table (with `/remove_header`)
 
-### TODO
+#### TODO
 
 - [x] Create new table
 - [x] Add user info to table

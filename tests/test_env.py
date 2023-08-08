@@ -3,6 +3,7 @@ Test that env.example exists and it has the correct fields
 """
 import os
 from pathlib import Path
+
 import pytest
 
 this_file_path = os.path.dirname(__file__)
