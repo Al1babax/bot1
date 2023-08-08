@@ -23,7 +23,7 @@ class Ping(commands.Cog):
     @app_commands.guilds(guild_id)
     async def ping(self, interactions: discord.Interaction):
         await interactions.response.send_message(
-            f"Pong! {round(self.client.latency * 1000)}ms (Ping with python 3.11)"
+            f"Pong! {round(self.client.latency * 1000)}ms"
         )
 
 
