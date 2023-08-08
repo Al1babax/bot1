@@ -1,8 +1,11 @@
+import logging
+
 import discord
 from discord import app_commands
 from discord.ext import commands
 from utils import basic_utils
-import logging
+from typing import Dict, Any
+
 
 
 class Roles(commands.Cog):
@@ -13,7 +16,7 @@ class Roles(commands.Cog):
 
     def __init__(self, client: commands.Bot):
         self.client = client
-        self.dict_of_role_to_emoji: {str: str} = {}
+        self.dict_of_role_to_emoji: Dict[type, Any] = {}
         self.role_message_id = None
 
     @commands.Cog.listener()
