@@ -46,13 +46,18 @@ def get_random_line():
 class CodeQuoteCog(commands.Cog):
     guild_id = basic_utils.get_guild_id()
 
+    @commands.Cog.listener()
+    async def on_ready(self):
+        print("CodeQuote cog ready")
+
     @app_commands.command(name="code-quote", description="Quotes code")
+    @app_commands.guilds(guild_id)
     async def ping(self, interactions: discord.Interaction):
-        await interactions.message.channel.send(
+        await interactions.response.send_message(
             "I'm going to fetch a random line of code from one of our repositories. "
             "Will you be able to guess what it is?"
         )
-        await interactions.message.channel.send(f"Code: \n{get_random_line()}")
+        await interactions.response.send_message(f"Code: \n{get_random_line()}")
 
 
 async def setup(bot):
